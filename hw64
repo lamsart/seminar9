@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication20
+{
+    class Program
+    {
+       
+        static void vivod(int N)
+        {
+            if (N > 0) 
+            {
+                Console.Write(N+" ");
+                vivod(N - 1);
+            }
+           
+        
+        }
+        static void Main(string[] args)
+        {
+
+            vivod(10);
+            
+            Console.ReadLine();
+        }
+    }
+}
