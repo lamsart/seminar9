@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication22
+{
+    class Program
+    {
+
+        static int Summa(int M, int N)
+        {
+            if (M < N) return M + Summa(M + 1, N);
+            else return N;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Summa(1, 15));
+
+            Console.ReadLine();
+        }
+    }
+}
